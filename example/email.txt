@@ -1,0 +1,9 @@
+Hello {{NAME}},
+
+Welcome to {{COMPANY}}
+
+Your registered email address is:
+{{EMAIL}}
+
+Best regards,
+Support Team

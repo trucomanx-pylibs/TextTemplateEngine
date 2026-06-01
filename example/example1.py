@@ -3,7 +3,14 @@
 import sys
 sys.path.append("../src")
 
-import text_template_engine.about as about
+from text_template_engine.renderer import render_file
 
-print(about.__package__)
-print(about.__version__)
+render_file(
+    template_path="email.txt",
+    output_path="output/email.txt",
+    variables={
+        "NAME": "John Doe",
+        "EMAIL": "john@example.com",
+        "COMPANY": "Acme Inc."
+    }
+)
