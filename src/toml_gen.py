@@ -60,8 +60,6 @@ dependencies = [
 [tool.setuptools]
 packages = ["{__package__}", "{__package__}.modules"]
 
-[tool.setuptools.package-data]
-"{__package__}" = ["data/logo.png", "data/logo.svg"]
 """
 
 # Escreve o pyproject.toml

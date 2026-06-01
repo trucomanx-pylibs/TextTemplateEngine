@@ -9,29 +9,33 @@ def render_string(template_str, variables):
     {{PLACEHOLDER_NAME}} with their corresponding values from
     the provided variables dictionary and returns the rendered
     string.
-
+    
     Parameters
     ----------
     template_str : str
         Template content containing placeholders.
-
+    
     variables : dict[str, str]
         Dictionary mapping placeholder names to replacement values.
-
-        Example:
+        
+        Example::
+        
             {
                 "NAME": "John Doe",
                 "EMAIL": "john@example.com"
             }
-
-        Template:
+        
+        Template::
+        
             Hello {{NAME}}
             Contact: {{EMAIL}}
-
-        Result:
+        
+        Result::
+        
             Hello John Doe
             Contact: john@example.com
-
+    
+    
     Notes
     -----
     - Placeholders are case-sensitive.
@@ -85,17 +89,20 @@ def render_file(template_path, output_path, variables):
     variables : dict[str, str]
         Dictionary mapping placeholder names to replacement values.
 
-        Example:
+        Example::
+        
             {
                 "NAME": "John Doe",
                 "EMAIL": "john@example.com"
             }
 
-        Template:
+        Template::
+        
             Hello {{NAME}}
             Contact: {{EMAIL}}
 
-        Result:
+        Result::
+        
             Hello John Doe
             Contact: john@example.com
 
