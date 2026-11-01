@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-import sys
-sys.path.append("../src")
+#pip install text_template_engine
+#OR
+#import sys
+#sys.path.append("../src")
 
 from text_template_engine.renderer import render_file
 
