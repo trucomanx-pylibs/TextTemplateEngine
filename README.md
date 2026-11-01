@@ -2,6 +2,8 @@
 
 Lightweight engine for rendering text templates into output files.
 
+The library replaces text in template files and creates new files. It is ideal for generating documentation, especially for users who prefer not to use command-line tools such as `sed` to replace text.
+
 ## 1. Installing
 
 To install the package from [PyPI](https://pypi.org/project/text_template_engine/), follow the instructions below:
