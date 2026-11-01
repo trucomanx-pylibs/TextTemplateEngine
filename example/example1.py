@@ -16,3 +16,6 @@ render_file(
         "COMPANY": "Acme Inc."
     }
 )
+
+# out_str=render_string(template_str, variables)
+# render_directory(template_dir, output_dir, variables, filter=[".html", ".txt", ".md"])
