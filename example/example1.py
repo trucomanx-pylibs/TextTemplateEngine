@@ -7,6 +7,8 @@
 
 from text_template_engine.renderer import render_file
 
+###################
+
 render_file(
     template_path="email.txt",
     output_path="output/email.txt",
@@ -17,5 +19,20 @@ render_file(
     }
 )
 
-# out_str=render_string(template_str, variables)
+###################
+
+in_str="""
+Hello {{NAME}}, Welcome to {{COMPANY}}!!!! Your institutional email address is: {{EMAIL}}
+Best regards,
+Support Team
+"""
+
+out_str=render_string(  in_str, 
+                        variables={ "NAME": "John Doe",
+                                    "EMAIL": "john@example.com",
+                                    "COMPANY": "Acme Inc."} 
+                     )
+print(out_str)
+
+###################
 # render_directory(template_dir, output_dir, variables, filter=[".html", ".txt", ".md"])
